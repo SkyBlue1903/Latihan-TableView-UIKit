@@ -25,7 +25,13 @@ class ViewController: UIViewController {
           forCellReuseIdentifier: "AcademyCell" // Isi dengan Identifier Cell yang telah ditentukan
         )
     }
-
+    @IBAction func goToWebsite(_ sender: Any) {
+        let urlDicoding = "https://www.dicoding.com"
+        if let url = URL(string: urlDicoding), UIApplication.shared.canOpenURL(url) {
+          UIApplication.shared.open(url)
+        }
+    }
+    
 
 }
 
