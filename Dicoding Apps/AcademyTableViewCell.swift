@@ -16,6 +16,7 @@ class AcademyTableViewCell: UITableViewCell {
     // Deklarasi komponen
     @IBOutlet var academyImageView: UIImageView!
     @IBOutlet var academyLabel: UILabel!
+    @IBOutlet var academyDescription: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

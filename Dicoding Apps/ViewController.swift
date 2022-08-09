@@ -48,6 +48,7 @@ extension ViewController: UITableViewDataSource {
             let academy = dummyAcademyData[indexPath.row]
             cell.academyLabel.text = academy.name
             cell.academyImageView.image = academy.image
+            cell.academyDescription.text = academy.description
           return cell
         } else {
           return UITableViewCell() // Mengembalikan UITableViewCell jika tidak ditemukan.

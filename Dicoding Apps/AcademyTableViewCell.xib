@@ -23,9 +23,15 @@
                             <constraint firstAttribute="height" constant="100" id="qic-5p-Wse"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUC-mx-XI5">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUC-mx-XI5">
                         <rect key="frame" x="116" y="46" width="48" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKL-b2-Y8Q">
+                        <rect key="frame" x="116" y="78" width="30.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -34,13 +40,17 @@
                     <constraint firstItem="YcJ-tr-XFh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="1Bg-DS-75g"/>
                     <constraint firstItem="CUC-mx-XI5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="37W-m7-gKO"/>
                     <constraint firstItem="YcJ-tr-XFh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Kin-Dd-i7k"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="CKL-b2-Y8Q" secondAttribute="trailing" constant="8" id="Rnn-ud-4KH"/>
                     <constraint firstItem="CUC-mx-XI5" firstAttribute="leading" secondItem="YcJ-tr-XFh" secondAttribute="trailing" constant="8" id="V4s-vv-k4J"/>
                     <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="CUC-mx-XI5" secondAttribute="trailing" constant="8" id="czD-Dh-xNw"/>
                     <constraint firstAttribute="bottom" secondItem="YcJ-tr-XFh" secondAttribute="bottom" constant="8" id="hbJ-3E-lFx"/>
+                    <constraint firstItem="CKL-b2-Y8Q" firstAttribute="leading" secondItem="YcJ-tr-XFh" secondAttribute="trailing" constant="8" id="k1b-jH-9vF"/>
+                    <constraint firstItem="CKL-b2-Y8Q" firstAttribute="top" secondItem="CUC-mx-XI5" secondAttribute="bottom" constant="8" symbolic="YES" id="yTr-Uj-I5s"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="academyDescription" destination="CKL-b2-Y8Q" id="3i6-rD-WUY"/>
                 <outlet property="academyImageView" destination="YcJ-tr-XFh" id="QCK-15-YLc"/>
                 <outlet property="academyLabel" destination="CUC-mx-XI5" id="QPU-tl-4z2"/>
             </connections>
