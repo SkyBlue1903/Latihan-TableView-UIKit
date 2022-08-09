@@ -17,6 +17,7 @@
 		5710FBA528A135B900F49593 /* AcademyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710FBA328A135B900F49593 /* AcademyTableViewCell.swift */; };
 		5710FBA628A135B900F49593 /* AcademyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5710FBA428A135B900F49593 /* AcademyTableViewCell.xib */; };
 		5710FBA828A2093800F49593 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710FBA728A2093800F49593 /* DetailViewController.swift */; };
+		57B2061828A2ACE40090590E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2061728A2ACE40090590E /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5710FBA328A135B900F49593 /* AcademyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademyTableViewCell.swift; sourceTree = "<group>"; };
 		5710FBA428A135B900F49593 /* AcademyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcademyTableViewCell.xib; sourceTree = "<group>"; };
 		5710FBA728A2093800F49593 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		57B2061728A2ACE40090590E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				5710FBA328A135B900F49593 /* AcademyTableViewCell.swift */,
 				5710FBA428A135B900F49593 /* AcademyTableViewCell.xib */,
 				5710FBA728A2093800F49593 /* DetailViewController.swift */,
+				57B2061728A2ACE40090590E /* ProfileViewController.swift */,
 			);
 			path = "Dicoding Apps";
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				5710FB9228A1338800F49593 /* ViewController.swift in Sources */,
 				5710FB8E28A1338800F49593 /* AppDelegate.swift in Sources */,
 				5710FBA228A1342C00F49593 /* AcademyModel.swift in Sources */,
+				57B2061828A2ACE40090590E /* ProfileViewController.swift in Sources */,
 				5710FB9028A1338800F49593 /* SceneDelegate.swift in Sources */,
 				5710FBA528A135B900F49593 /* AcademyTableViewCell.swift in Sources */,
 			);

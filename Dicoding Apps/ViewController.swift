@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     // Deklarasi Table view
     @IBOutlet var academyTableView: UITableView!
     
+    // Deklarasi komponen pada scene profile
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         academyTableView.dataSource = self // Assign 'self' sebagai TableView yang ada di Main.storyboard (Menyediakan data ke TableView)

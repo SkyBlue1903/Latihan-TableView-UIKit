@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hUL-hC-QeR">
-                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -30,6 +30,7 @@
                             <constraint firstItem="hUL-hC-QeR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xYO-55-MTm"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Daftar Kelas" image="books.vertical" catalog="system" id="dIV-cJ-IXh"/>
                     <navigationItem key="navigationItem" title="Kelas Dicoding" id="p3X-JZ-aHL">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="globe" catalog="system" id="LKj-tQ-9Uz">
                             <connections>
@@ -44,7 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816.9230769230769" y="96.682464454976298"/>
+            <point key="canvasLocation" x="2458.4615384615386" y="96.682464454976298"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="3xe-mj-I8E">
@@ -97,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzU-Mu-iY8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2640" y="96.682464454976298"/>
+            <point key="canvasLocation" x="3281.5384615384614" y="96.682464454976298"/>
         </scene>
         <!--Item-->
         <scene sceneID="t1X-pe-ogK">
@@ -111,16 +112,84 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rnW-l0-gHb"/>
+                        <segue destination="VPP-Wa-O18" kind="relationship" relationship="rootViewController" id="rnW-l0-gHb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Za6-xz-wIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="712" y="97"/>
         </scene>
+        <!--Kelas Dicoding-->
+        <scene sceneID="FnS-PR-XXO">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VPP-Wa-O18" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Kelas Dicoding" id="k7y-XY-aXk"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0i7-3T-4mn">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="JG6-Zb-atY"/>
+                        <segue destination="F8k-ck-hrO" kind="relationship" relationship="viewControllers" id="cG6-YQ-Mgb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KzT-io-Nzh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1529.2307692307693" y="96.682464454976298"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="cim-Qa-mQ4">
+            <objects>
+                <viewController id="F8k-ck-hrO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lNx-zU-2zl">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foto almet bebas" translatesAutoresizingMaskIntoConstraints="NO" id="8FS-9y-XgR">
+                                <rect key="frame" x="35" y="108" width="320" height="438"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erlangga Anugrah Arifin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XH-pA-myM">
+                                <rect key="frame" x="76" y="566" width="238" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer at MyEduSolve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12N-EN-o8e">
+                                <rect key="frame" x="110.66666666666669" y="596" width="169" height="15"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zaf-Ft-kKY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="12N-EN-o8e" firstAttribute="centerX" secondItem="lNx-zU-2zl" secondAttribute="centerX" id="4RL-5m-Njf"/>
+                            <constraint firstItem="8FS-9y-XgR" firstAttribute="centerY" secondItem="lNx-zU-2zl" secondAttribute="centerY" constant="-95" id="8vr-HG-Hg6"/>
+                            <constraint firstItem="12N-EN-o8e" firstAttribute="width" secondItem="8FS-9y-XgR" secondAttribute="width" multiplier="0.528125" id="A6g-Y0-OAn"/>
+                            <constraint firstItem="2XH-pA-myM" firstAttribute="top" secondItem="8FS-9y-XgR" secondAttribute="bottom" constant="20" id="brT-P8-aBl"/>
+                            <constraint firstItem="8FS-9y-XgR" firstAttribute="centerX" secondItem="lNx-zU-2zl" secondAttribute="centerX" id="dgH-lO-4UL"/>
+                            <constraint firstItem="2XH-pA-myM" firstAttribute="width" secondItem="8FS-9y-XgR" secondAttribute="width" multiplier="0.744" id="g3n-X0-7qT"/>
+                            <constraint firstItem="8FS-9y-XgR" firstAttribute="leading" secondItem="Zaf-Ft-kKY" secondAttribute="leading" constant="35" id="kcR-f2-JZ0"/>
+                            <constraint firstItem="8FS-9y-XgR" firstAttribute="top" secondItem="Zaf-Ft-kKY" secondAttribute="top" constant="20" id="lVX-ku-Hp7"/>
+                            <constraint firstItem="12N-EN-o8e" firstAttribute="top" secondItem="2XH-pA-myM" secondAttribute="bottom" constant="10" id="ylh-50-QU0"/>
+                            <constraint firstItem="2XH-pA-myM" firstAttribute="centerX" secondItem="lNx-zU-2zl" secondAttribute="centerX" id="zia-e4-Khq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="gG0-y4-W2I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ngo-kZ-15q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526.25" y="1030.9859154929577"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="books.vertical" catalog="system" width="128" height="107"/>
+        <image name="foto almet bebas" width="886" height="886"/>
         <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
