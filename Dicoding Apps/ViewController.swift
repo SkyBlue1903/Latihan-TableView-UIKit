@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         academyTableView.dataSource = self // Assign 'self' sebagai TableView yang ada di Main.storyboard (Menyediakan data ke TableView)
+        academyTableView.delegate = self // Menyediakan data detail ketika tabel di tekan
         
         // Mendaftarkan XIB ke controller
         academyTableView.register(
@@ -56,4 +56,20 @@ extension ViewController: UITableViewDataSource {
     }
     
  
+}
+
+// Digunakan untuk berpindah ViewController ke lain
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "moveToDetail", sender: dummyAcademyData[indexPath.row]) // identifier disamakan dengan segue yang sudah ditetapkan. Awal sender adalah nil
+    }
+    
+    // Menyediakan data sebelum segue dieksekusi, dengan identifiernya "moveToDetail" dan tujuannya 'DetailViewController'
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moveToDetail" {
+            if let detailViewController = segue.destination as? DetailViewController {
+                detailViewController.academy = sender as? AcademyModel
+            }
+        }
+    }
 }
